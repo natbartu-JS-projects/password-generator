@@ -14,6 +14,23 @@ const randomFunctions = {
   symbol: getRandomSymbol,
 };
 
+clipboardElement.addEventListener("click", () => {
+  const textarea = document.createElement("textarea");
+  const password = resultElement.innerText;
+
+  if (!password) {
+    return;
+  }
+
+  textarea.value = password;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  // document.contenteditable("copy");
+  textarea.remove();
+  alert("Password copied to clipboard!");
+});
+
 generateElement.addEventListener("click", () => {
   const length = +lengthtElement.value;
   const hasLower = lowercaseElement.checked;
