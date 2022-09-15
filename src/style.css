@@ -2,11 +2,11 @@
 
 * {
   box-sizing: border-box;
-  /* border: solid #5B6DCD 1px; */
 }
 
 body {
-  background-color: #f6f7fb;
+  background-color: #67726e;
+  color: #fff;
   font-family: 'Rajdhani', sans-serif;
   display: flex;
   flex-direction: column;
@@ -15,4 +15,10 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  padding: 10px;
+}
+
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
 }
