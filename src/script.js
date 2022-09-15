@@ -1,3 +1,10 @@
+const randomFunctions = {
+  lower: getRandomLower,
+  upper: getRandomUpper,
+  number: getRandomNumber,
+  symbol: getRandomSymbol,
+};
+
 function getRandomLower() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
@@ -14,5 +21,3 @@ function getRandomSymbol() {
   const symbols = "!@#$%^&*(){}[]=<>/,.";
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
-
-console.log(getRandomSymbol());
