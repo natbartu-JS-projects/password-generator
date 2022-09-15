@@ -45,3 +45,9 @@ h2 {
   width: 100%;
   border-radius: 10px;
 }
+
+.result-container #result {
+  /* Allow long words to be able to break and wrap onto the next line */
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+}
