@@ -53,6 +53,14 @@ h2 {
   max-width: calc(100% - 40px);
 }
 
+.result-container .btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+}
+
 .btn {
   border: none;
   background-color: rgba(0,0,0,0.2);
